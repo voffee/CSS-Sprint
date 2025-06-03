@@ -10,3 +10,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+input {
+    /* Style for input not in label */
+    border: tomato 2px solid;
+}
+
+label {
+    /* Style for label */
+    font-family: "Esteban", serif;
+    font-size: 1rem;
+
+    & input {
+        /* Style for input within label */
+        border: blue 2px dashed;
+    }
+}
+
+h2 {
+    color: tomato;
+
+    + p {
+        color: white;
+        background-color: black;
+    }
+}
