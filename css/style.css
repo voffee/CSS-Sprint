@@ -13,25 +13,68 @@
 
 input {
     /* Style for input not in label */
-    border: tomato 2px solid;
+    /* border: tomato 2px solid; */
 }
 
 label {
     /* Style for label */
-    font-family: "Esteban", serif;
-    font-size: 1rem;
+    /* font-family: "Esteban", serif; */
+    /* font-size: 1rem; */
 
     & input {
         /* Style for input within label */
-        border: blue 2px dashed;
+        /* border: blue 2px dashed; */
     }
 }
 
 h2 {
-    color: tomato;
+    /* color: tomato; */
 
     + p {
+        /* color: white; */
+        /* background-color: black; */
+    }
+}
+
+.notices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+    margin: auto;
+}
+
+.notice {
+    width: 90%;
+    justify-content: center;
+    border-radius: 1rem;
+    border: black solid 2px;
+    background-color: #FFC107;
+    color: black;
+    padding: 1rem;
+    
+    .notice-heading::before {
+        /* equivalent to '.notice .notice-heading::before */
+        content: "i ";
+    }
+    &.warning {
+        /* equivalent to '.notice.warning' */
+        background-color: #D81B60;
+        border-color: #D81B60;
         color: white;
-        background-color: black;
+        .warning-heading::before {
+            /* equivalent to '.notice.warning .warning-heading::before */
+            content: "! ";
+        }
+    }
+    &.success {
+        /* equivalent to '.notice.success' */
+        background-color: #004D40;
+        border-color: #004D40;
+        color: white;
+        .success-heading::before {
+            /* equivalent to '.notice.success .success-heading::before' */
+            content: "✓ ";
+        }
     }
 }
