@@ -36,45 +36,61 @@ h2 {
     }
 }
 
-.notices {
+/* .notices {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 90%;
     margin: auto;
-}
+} */
 
 .notice {
-    width: 90%;
+    /* width: 90%;
     justify-content: center;
     border-radius: 1rem;
     border: black solid 2px;
     background-color: #FFC107;
     color: black;
-    padding: 1rem;
+    padding: 1rem; */
     
     .notice-heading::before {
         /* equivalent to '.notice .notice-heading::before */
-        content: "i ";
+        /* content: "i "; */
     }
     &.warning {
         /* equivalent to '.notice.warning' */
-        background-color: #D81B60;
+        /* background-color: #D81B60;
         border-color: #D81B60;
-        color: white;
+        color: white; */
         .warning-heading::before {
             /* equivalent to '.notice.warning .warning-heading::before */
-            content: "! ";
+            /* content: "! "; */
         }
     }
     &.success {
         /* equivalent to '.notice.success' */
-        background-color: #004D40;
+        /* background-color: #004D40;
         border-color: #004D40;
-        color: white;
+        color: white; */
         .success-heading::before {
             /* equivalent to '.notice.success .success-heading::before' */
-            content: "✓ ";
+            /* content: "✓ "; */
         }
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+.card {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+    & h2 {
+        color: slateblue;
     }
 }
