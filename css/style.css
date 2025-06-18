@@ -92,5 +92,8 @@ h2 {
 
     & h2 {
         color: slateblue;
+        .featured & {
+            color: tomato;
+        }
     }
 }
