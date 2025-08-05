@@ -1,0 +1,7 @@
+{
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "chat.notifyWindowOnConfirmation": false,
+    "telemetry.feedback.enabled": false,
+    "editor.wordWrap": "on"
+}
